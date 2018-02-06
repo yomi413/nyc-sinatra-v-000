@@ -1,0 +1,14 @@
+<h1>Update Single Figure: <%= @figure.name %></h1>
+
+<form method="POST" action="/figures/<%= @figure.id %>">
+  <input type="hidden" name="_method" value="PATCH">
+
+  <input type="text" name="figure[name]" id="figure_name" value="figure[title_ids]">
+
+    <h1>Landmark</h1>
+
+    <input type="text" name="new_landmark">
+
+  <input type="submit" value="Edit Figure">
+
+</form>
